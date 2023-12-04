@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        header {
+            text-align: center;
+            padding: 10px;
+            height: 6vh;
+          
+          
+          }
+              
+              nav ul {
+                  list-style-type: none;
+                  text-align: center;
+                  padding:10px;
+                }
+                
+                nav ul li {
+                  display: inline;
+                  margin: 10px;
+                }
+                
+                nav a {
+                  text-decoration: none;
+                  transition: color 0.3s;
+                  color: black;
+                }
+                
+                nav a:hover {
+                
+                  text-decoration: underline;
+                }
+          
+                 .logo{
+                      margin-left: 1px;
+                      text-align: left;
+                       float: left;
+                  }
+                  .logo logo{
+                      margin-left: 17px;
+                      color: black;
+                      font-family: 'Times New Roman', Times, serif; 
+                      font-size: 25px;
+                  }
+                  .logo h4{
+                      color: black;
+                      font-family: 'Times New Roman', Times, serif;
+                      margin-left: 21px;
+                      margin-top: 3px;
+                  }
+                  .form{
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 35%;
+                  }
+                  .fom{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: start;
+                  }
+                  .fom input{
+                    width: 300px;
+                  }
+                  .talk2{
+                    display: flex;
+                    flex-direction: row;
+                    width: 150px;
+                    height: 5vh;
+                 
+                  }
+                  .talk{
+                    margin-right:35%;
+            
+                    width: 50%;
+                  }
+                  @media (max-width: 600px){
+                  .form{
+                    display: flex;
+                    flex-direction: column;
+                  }
+                  input{
+                    width: auto;
+                  }
+                  .talk2{
+                    display: flex;
+                    flex-direction: column;
+                    width: auto;
+                  }
+                  header{
+                    display: flex;
+                    flex-direction: column;
+                    height: auto;
+                  }
+                  nav ul li a{
+                    display: flex;
+                    flex-direction: column;
+                  }
+                  
+                  } 
+    </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+        <div class="logo">
+            <logo><i><b>PulseWidth Digital</b></i></logo>
+            <h4>Marketing & Branding</h4>
+        </div>
+     <div class="nav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="blog.html">contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    </header>
+    <div class="form">
+        <div class="talk">
+            <h1>LET'S TALK</h1>
+        </div>
+        <div class="fom">
+            <table>
+            <div class="talk2">
+           
+                <label>First Name</label>
+                <input type="text" required>
+
+                <label>    Last Name</label>
+                <input type="text" required>
+    
+        </div>
+            <br><br><br>
+            <div class="shift">
+            <tr>
+              <label>Email</label>
+              <input type="email" required style="width: 50%;">
+            </tr>
+            <br>
+            <tr>
+              <label>Subject</label>
+              <input type="text" required style="width: 50%;">
+            </tr>
+            <br>
+            <tr>
+              <label>Message</label>
+              <input type="text" required style="height: 15vh; width: 50%;">
+            </tr>
+            <br>
+            <input type="submit" style="width:fit-content;">
+            <input type="reset" style="width:fit-content;">
+            </table>
+          </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

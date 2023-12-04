@@ -78,28 +78,47 @@
         font-family: impact;
         font-size: 50px;
         color: black;
+        display: flex;
       }
       .word-list {
+        
             display: column;
-            animation: slideWords 3s forwards; /* Adjust the duration based on your preference */
+            animation: slideWords 3s forwards; 
+            width: 450px;
+            text-align: center;
+      }
             
-        }
+        
         @keyframes slideWords {
             0% {
                 transform: translateX(100%);
             }
 
             100% {
-                transform: translateX(5%);
-            }
-            100% {
-                transition: left to right;
+                transform: translateX(0%);
             }
             
-        }/*keyframe to make it move*/
+        }
+      
+      @media (max-width: 600px){
+      header{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+      }
+      nav ul li a{
+        display: flex;
+        flex-direction: column;
+      }
+      h1{
+        display: flex;
+        font-size: 15px;
+      }
+      } 
     </style>
 </head>
 <body>
+  <div class="container">
     <header>
         <div class="logo">
             <logo><i><b>PulseWidth Digital</b></i></logo>
@@ -114,7 +133,9 @@
                 <li><a href="blog.html">contacts</a></li>
             </ul>
         </nav>
+        <button style="background-color:rgb(0, 162, 255); border-radius:5px;box-shadow:13px 13px 13px;"><a style="color: white; text-decoration:none;" href="form.html">Lets talk</a></button>
     </div>
+   
     </header>
     <div class="h1" >
         <h1>PulseWidth Digital</h1>
@@ -163,5 +184,6 @@
     <section style="background-color:antiquewhite; text-align:center; height:5vh;color: black">
         <p>&copy; 2023 PulseDigitalWidth</p>
     </section>
+  </div>
 </body>
 </html>

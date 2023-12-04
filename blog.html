@@ -16,7 +16,7 @@
 .logo{
             margin-left: 1px;
             text-align: left;
-            float: left;
+
         }
         .logo logo{
             margin-left: 17px;
@@ -34,6 +34,21 @@
             text-align: center;
             font-size: xx-large;
         }
+        @media (max-width: 600px){
+            header{
+                display: flex;
+                flex-direction: column;
+                height: auto;
+              }
+              .button{
+                display: flex;
+              }
+              img {
+                max-width: 100%;
+                height: auto;
+            }
+            }
+           
     </style>
 </head>
 <body>
@@ -80,8 +95,8 @@
 
 
 
-    <section style="background-color:antiquewhite; text-align:center; height:5vh;color: black">
+    <footer style="background-color:antiquewhite; text-align:center; height:5vh;color: black">
         <p>&copy; 2023 PulseDigitalWidth</p>
-    </section>
+    </footer>
 </body>
 </html>

@@ -78,35 +78,27 @@
         }
 
 
-        img{
-            float: left;
-            position: top;
-        }
+       
         .para{
           
             border: 10px;
             width: 50%;
-            padding-left: 450px;
+            text-align: center;
 
         }
-        @media screen and (max-width: 600px) {
-            body {
-               font-size: 14px;
-            }
-          
-            header, nav, main, footer {
-               margin: 10px;
-               padding: 10px;
-            }
-            h1{
-              font-size: 15px;
-              display: flex;
-            }
-          }
+        @media (max-width: 600px){
+            header{
+                display: flex;
+                flex-direction: column;
+                height: auto;
+              }
+              
+            } 
         
     </style>
 </head>
 <body>
+    <div class="container">
     <header>
         <div class="logo">
         <logo><i><b>PulseWidth Digital</b></i></logo>
@@ -127,12 +119,10 @@
 
   
     <main>
-        <section class="about-us">
+        <section class="about-us" style="background-image:url(R.jpg);background-repeat:no-repeat;background-size:cover;">
        
-
-           <img src="R.jpg" width="400px" height="400px"> 
          <div class="para">
-            <p style="text-align: center; display: block; margin-left: 15px;">
+            <p style=" display: flex; color:white;">
               PulseWidth Digital,<br> 
               your dynamic partner in the digital marketing realm.
               We specialize in a range of services, from social media management and web/graphic 
@@ -154,5 +144,6 @@
     <footer style="color: white;margin-top: 20%;">
         <p>&copy; 2023 PulseDigitalWidth</p>
     </footer>
+</div>
 </body>
 </html>
